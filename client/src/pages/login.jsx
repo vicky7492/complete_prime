@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 
 import { Link } from "react-router-dom";
-import axios from "../Axios-create";
+import axios from "axios";
 
 
 const Login = (props) => {
@@ -12,35 +12,7 @@ const Login = (props) => {
   const inputRef = useRef();
 
   console.log(props);
-  // const changePassword = () => {
-  //   let data = {
-  //     userId: OldPassword,
-  //     NewPassword: NewPassword,
-  //   };
-  //   console.log(inputRef.current.value);
-  //   if (NewPassword) {
-  //     seterror("");
-  //     axios
-  //       .post("https://radiant-lowlands-49351.herokuapp.com/api/v1/login", data)
-  //       .then((res) => {
-  //         if (res.status === 200) {
-  //           setOldPassword("");
-  //           setNewPassword("");
-  //           input.current.value = "";
-  //           inputRef.current.value = "";
-  //           localStorage.setItem("token", res.data.token);
-  //           localStorage.setItem("user", res.data.userId);
-  //           props.setstate(false);
-  //           props.history.push("/");
-  //         }
-  //       })
-  //       .catch((err) => {
-  //         console.log(err);
-  //       });
-  //   } else {
-  //     seterror("new password and confirm password doesn't match");
-  //   }
-  // };
+  
 
 
 
